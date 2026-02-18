@@ -1,0 +1,32 @@
+h2{
+    color: Red;
+    padding: 0;
+    margin:0;
+}
+.main{
+    border: solid 1px red;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    border-bottom: 1px blue solid;
+}
+#tagline{
+    text-align: center;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.job{ 
+    border: solid green 1px;
+    width: fit-content;
+    padding: 0;
+    /* justify-self: flex-end; */
+    align-self: center;
+}  
