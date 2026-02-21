@@ -1,8 +1,17 @@
 import express from "express";
+import cors from "cors";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import "dotenv/config";
 
 const app = express();
+app.use(
+  cors({
+    origin: "https://obsolete-two.vercel.app/",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type"],
+  }),
+);
+
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
