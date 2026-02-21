@@ -6,7 +6,7 @@ import "dotenv/config";
 const app = express();
 app.use(
   cors({
-    origin: "https://obsolete-two.vercel.app/",
+    origin: ["https://obsolete-two.vercel.app/", "*"],
     methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type"],
   }),
