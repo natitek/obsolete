@@ -1,16 +1,75 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🦾 OBSOLETE
 
-Currently, two official plugins are available:
+**Tagline:** *Everything can be automated. Including you.*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📖 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Obsolete** is a satirical web project that explores a future where *every job, skill, and human effort* is slowly (or aggressively) replaced by automation, algorithms, and AI “clankers.”
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+> **“When the machine replaces you… what’s left?”**
+
+---
+
+## 🎯 Purpose
+
+- Mock the obsession with automation and AI
+- Highlight which skills are *most* and *least* replaceable
+- Suggest career paths moving forward in this dystopia
+
+
+---
+
+## 🧠 Core Concept
+
+Users interact with an interface that:
+
+- Evaluates jobs and skills
+- Simulates how automation replaces them step by step
+
+
+Example:
+> ❌ *Frontend Developer — Replaced by a prompt and a coffee-fueled GPU.*
+
+---
+
+## 🧩 Features
+
+### 1. Obsolescence Scanner
+- Input a job or skill
+- Receive:
+  - Replacement probability
+  - Time-to-obsolescence
+  - The “clanker” that replaces it
+
+### 2. Automation Timeline
+- A visual countdown from *Human Needed* → *Barely Needed* → *Obsolete*
+
+
+### 3. Survival Skills Section
+- Skills that are:
+  - Hard to automate
+  - Still human-dependent
+  - Social, physical, or deeply creative
+
+> *Until The Next Iteration replaces those too.*
+
+---
+
+## 🖥️ Tech Stack
+
+- **React (JSX)**
+- **Express**
+- **gemini-2.5-flash**
+
+
+
+---
+
+
+
+> *“You are not obsolete yet. Please wait.”*
