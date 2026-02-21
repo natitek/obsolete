@@ -4,13 +4,17 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 import "dotenv/config";
 
 const app = express();
-app.use(
-  cors({
-    origin: ["https://obsolete-two.vercel.app/", "*"],
-    methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
-  }),
-);
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+  if (req.method === "OPTIONS") {
+    return res.sendStatus(204);
+  }
+
+  next();
+});
 
 const port = process.env.PORT || 3000;
 
@@ -53,6 +57,4 @@ app.post("/analyze", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
+export default app;
