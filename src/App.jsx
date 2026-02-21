@@ -23,7 +23,7 @@ function App() {
     setShowResults(false);
 
     try {
-      const response = await fetch('/analyze', {
+      const response = await fetch('https://obsolete-r5nv.vercel.app/analyze', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
