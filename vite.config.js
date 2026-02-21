@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/analyze": {
-        target: "http://localhost:3000",
+        target: "https://obsolete-c6ln.onrender.com",
         changeOrigin: true,
       },
     },
