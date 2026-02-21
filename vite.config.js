@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/analyze": {
-        target: "https://obsolete-c6ln.onrender.com",
+        target: "https://obsolete-r5nv.vercel.app",
         changeOrigin: true,
       },
     },
