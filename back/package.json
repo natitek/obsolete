@@ -8,8 +8,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
-    "test": "echo \"no tests available\"",
-    "build": "node server.js"
+    "test": "echo \"no tests available\""
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
