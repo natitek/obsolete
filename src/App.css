@@ -1,0 +1,227 @@
+:root {
+  --background-start-rgb: 14, 17, 23;
+  --background-end-rgb: 14, 17, 23;
+  --foreground-rgb: 255, 255, 255;
+  --primary-rgb: 120, 82, 255;
+  --primary-hover-rgb: 140, 102, 255;
+  --card-background-rgb: 24, 27, 33;
+  --card-border-rgb: 48, 51, 57;
+  --radius: 8px;
+}
+
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body {
+  background: linear-gradient(to bottom, rgb(var(--background-start-rgb)), rgb(var(--background-end-rgb)));
+  color: rgb(var(--foreground-rgb));
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 900px; /* Adjust as needed */
+  width: 100%;
+  margin: 0 auto;
+}
+
+.app-header {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.app-main {
+  flex-grow: 1;
+}
+
+.app-footer {
+  padding: 2rem 0;
+  text-align: center;
+  color: rgba(var(--foreground-rgb), 0.7);
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: rgba(var(--foreground-rgb), 0.7);
+}
+
+.card {
+  background-color: rgba(var(--card-background-rgb), 0.5);
+  border-radius: var(--radius);
+  border: 1px solid rgb(var(--card-border-rgb));
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+}
+
+.input {
+  flex-grow: 1;
+  background-color: rgba(var(--card-background-rgb), 0.8);
+  border: 1px solid rgb(var(--card-border-rgb));
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: rgb(var(--foreground-rgb));
+}
+
+.input:focus {
+  outline: none;
+  border-color: rgb(var(--primary-rgb));
+}
+
+.button {
+  background: linear-gradient(to right, #8a2be2, #4169e1);
+  border: none;
+  border-radius: var(--radius);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.results-card {
+  margin-top: 2rem;
+  background-color: rgba(var(--card-background-rgb), 0.5);
+  border-radius: var(--radius);
+  border: 1px solid rgb(var(--card-border-rgb));
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.results-card pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.results-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid; /* Thicker border for gradient */
+  border-image: linear-gradient(to right, rgb(var(--primary-rgb)), transparent) 1; /* Gradient border */
+  padding-bottom: 1rem;
+  text-shadow: 0 0 8px rgba(var(--primary-rgb), 0.5); /* Text shadow for spice */
+}
+
+.result-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(var(--card-border-rgb), 0.5); /* Lighter border */
+  font-size: 1.1rem;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.result-item strong {
+  color: rgb(var(--primary-rgb)); /* Use primary color */
+  margin-right: 0.5rem;
+  font-weight: 600; /* Bolder */
+  transition: transform 0.2s ease-in-out; /* Subtle hover effect */
+  display: inline-block; /* Needed for transform */
+}
+
+.result-item strong:hover {
+  transform: translateX(5px); /* Slide on hover */
+}
+
+.result-item ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.result-item li {
+  background: linear-gradient(to right, rgba(var(--card-background-rgb), 0.7), rgba(var(--card-background-rgb), 0.3)); /* Gradient background */
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(var(--card-border-rgb), 0.7); /* Slightly stronger border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transitions */
+}
+
+.result-item li:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  border-color: rgb(var(--primary-hover-rgb)); /* Primary hover border */
+}
+
+.video-recommendation {
+  margin-top: 2rem;
+  background-color: rgba(var(--card-background-rgb), 0.7); /* Slightly different background */
+  border-radius: var(--radius);
+  border: 1px solid rgb(var(--primary-rgb)); /* Highlighted border */
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.video-recommendation h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: rgb(var(--primary-rgb));
+}
+
+.video-recommendation p {
+  margin-bottom: 1.5rem;
+  color: rgba(var(--foreground-rgb), 0.8);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius);
+  margin: 0 auto;
+  max-width: 700px; /* Max width for the video container */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
