@@ -49,7 +49,7 @@ function App() {
     <div className="app">
       <header className="app-header">
         <h1 className="title silkscreen-regular">Obsolete</h1>
-        <p className="tagline">The Future is looking grim, Time to look at reality in the eyes</p>
+        <p className="tagline">You will be Replaced by a Clanker, Find out When</p>
       </header>
       <main className="app-main">
         <div className="card">
@@ -67,7 +67,9 @@ function App() {
           </form>
         </div>
 
-        {loading && <div className="loading">loading ... Imagine Getting Replaced By A Clanker... LOL</div>}
+        {loading &&
+         <div className="spinner" style={{margin:"0 auto",marginTop:"20px"}}/>
+        }
 
         {showResults && analysis && (
           <div className="results-card">
@@ -82,7 +84,7 @@ function App() {
               <strong>Reasoning:</strong> {analysis.reasoning}
             </div>
             <div className="result-item">
-              <strong>Options: (to stay a head of the competition)</strong>
+              <strong>Options: (to stay ahead of the competition)</strong>
               <ul>
                 {analysis.options.map((option, index) => (
                   <li key={index}>{option}</li>
